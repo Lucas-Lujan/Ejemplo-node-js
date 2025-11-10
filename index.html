@@ -2,19 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta charset="UTF-8" /> 
+  <!-- charset es el conjunto de carácteres, el UTF-8 es el conjunto de carácteres que usa nuestro idioma, se incluye la Ñ -->
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" /> 
+  <!-- es la imagen que aparece al lado del title (la pestaña) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- es para indicarle lo que se va a ver en la página. El scale sirve para diferenciar entre lo que es un celular o desktop. El 1.0 va para ambos -->
   <title>vite-project</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- de un link de bootstrap va a cargarse un archivo de css que ya tiene estilos y se podrá usar las clases que lleva dentro, ahorra tiempo. Está bueno para tener un estilo consistente para toda la página. -->
 </head>
-
+<!-- adentro del head también se pueden importar archivos javascript -->
 <body>
   <div id="app"></div>
   <button id="obtener">OBTENER</button>
   <div id="tareas">Tareas</div>
   <script type="module" src="/src/main.js"></script>
 </body>
-
+<!-- type module -> importar funciones de otros archivos, vite lo hace por sí solo. El type module va en el body  -->
 </html>
